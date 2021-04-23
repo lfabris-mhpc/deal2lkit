@@ -23,6 +23,8 @@
 
 using namespace dealii;
 
+#if defined(DOXIGEN) || defined(DEAL_II_TRILINOS_WITH_MUELU)
+
 D2K_NAMESPACE_OPEN
 
 ParsedAMGMueLuPreconditioner::ParsedAMGMueLuPreconditioner(
@@ -261,5 +263,6 @@ template void
 deal2lkit::ParsedAMGMueLuPreconditioner::initialize_preconditioner<
   dealii::TrilinosWrappers::SparseMatrix>(
   const dealii::TrilinosWrappers::SparseMatrix &);
+#endif
 
 #endif

@@ -32,6 +32,7 @@
 
 D2K_NAMESPACE_OPEN
 
+#if defined(DOXIGEN) || defined(DEAL_II_TRILINOS_WITH_MUELU)
 /**
  * A parsed AMG preconditioner based on MueLu which uses parameter files to
  * choose between different options. This object is a
@@ -168,7 +169,7 @@ private:
    */
   std::string coarse_type;
 };
-
+#endif
 
 D2K_NAMESPACE_CLOSE
 
