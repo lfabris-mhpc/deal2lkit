@@ -83,7 +83,7 @@ MACRO(D2K_SETUP_TARGET _target)
   ENDIF()
 
   # Necessary for setting INCLUDE_DIRECTORIES via SET_PROPERTY
-  CMAKE_MINIMUM_REQUIRED(VERSION 2.8.8)
+  CMAKE_MINIMUM_REQUIRED(VERSION 2.8.12)
 
   #
   # Every build type that (case insensitively) matches "debug" is
